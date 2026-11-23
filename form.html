@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Buku</title>
+</head>
+<body>
+
+    <h2>Form Input Data Buku</h2>
+
+    <form method="POST" action="proses-buku.php">
+        Judul Buku:
+        <input type="text" name="judul" required>
+        <br><br>
+
+        Pengarang:
+        <input type="text" name="pengarang" required>
+        <br><br>
+
+        Penerbit:
+        <input type="text" name="penerbit" required>
+        <br><br>
+
+        Tahun Terbit:
+        <input type="number" name="tahun_terbit"
+               min="1901" max="2155" required>
+        <br><br>
+
+        Qty:
+        <input type="number" name="qty" min="0" required>
+        <br><br>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+    <a href="form-buku.php">Lihat Data Buku</a>
+
+</body>
+</html>
